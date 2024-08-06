@@ -1,0 +1,51 @@
+<div class="banner__home">
+    <img src="../../../assets/banner_home.png" alt="">
+    <div class="promotion__card">
+        <div class="promotion__info">
+            <h1>Promoção de Inverno</h1>
+            <p>Novas ofertas em jogos e expansões ao seu alcance.</p>
+        </div>
+        <div class="promotion__button">
+            <p-button class="promotion_b" label="Economize Já" [rounded]="true"></p-button>
+        </div>
+    </div>
+</div>
+
+
+<div class="grid_images">
+    <app-grid-card gameLink="https://store.playstation.com/pt-br/concept/10002684"  bigcardcover="../../../assets/1astrobot.jpg"></app-grid-card>
+    <app-grid-card gameLink="https://store.playstation.com/pt-br/concept/10002456"  bigcardcover="../../../assets/2spiderman.jpg"></app-grid-card>
+    <app-grid-card gameLink="https://store.playstation.com/pt-br/concept/10000657"  bigcardcover="../../../assets/3helldivers.jpg"></app-grid-card>
+    <app-grid-card gameLink="https://store.playstation.com/pt-br/concept/10001850"  bigcardcover="../../../assets/4godofwar.jpg"></app-grid-card>
+    <app-grid-card gameLink="https://store.playstation.com/pt-br/concept/230079"  bigcardcover="../../../assets/5thelastofus.jpg"></app-grid-card>
+    <app-grid-card gameLink="https://store.playstation.com/pt-br/concept/10003386"  bigcardcover="../../../assets/6riseofronin.jpg"></app-grid-card>
+</div>
+
+
+
+
+
+<div class="pai">
+    <div class="filho_container">
+        <div class="filho_title">
+            <h2>10 melhores jogos no seu país</h2>
+        </div>
+    </div>
+    <div class="filho_container">
+        <div class="filho_title">
+            <h2>Novos jogos</h2>
+        </div>
+        <div class="filho_carosel">
+            <p-carousel [value]="imagesCarousel1" [numVisible]="6" [numScroll]="6" [circular]="false">
+                <ng-template pTemplate="item" let-image>
+                    <div class="carousel__image">
+                        <a href="#" class="carousel-item">
+                            <img [src]="image.src" alt="{{image.alt}}" class="carousel-image" />
+                            <p class="game-name">{{ image.nameGame }}</p>
+                        </a>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+    </div>
+</div>

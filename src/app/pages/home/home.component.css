@@ -1,0 +1,168 @@
+.banner__home{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.grid_images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.promotion__card {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    padding: 40px 90px;
+
+
+}
+
+.promotion__info > h1 {
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.promotion__info > p {
+    font-size: 14px;
+}
+
+:host ::ng-deep .promotion_b .p-button {
+    /* Estilos para o botão, utilizando alta especificidade */
+    background-color: #007bff; /* Azul para o fundo */
+    color: white; /* Cor do texto */
+    padding: 1rem 1rem; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+:host ::ng-deep .promotion_b .p-button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    border-color: #0056b3; /* Cor da borda ao passar o mouse */
+}
+
+.pai {
+    margin-left: 91px;
+    margin-right: 91px;
+}
+
+
+
+
+.filho_carosel {
+    display: block;
+    justify-items: center;
+    align-items: center;
+
+}
+
+:host ::ng-deep .p-carousel .p-carousel-next,
+:host ::ng-deep .p-carousel .p-carousel-prev {
+  background-color: #0070cc;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease;
+}
+
+
+:host ::ng-deep .p-carousel .p-carousel-prev {
+    background-color: #0070cc;
+    left: 1px;
+    margin-left: 70px;
+    position: absolute;
+    z-index: 1;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-items-content {
+    border: 1px solid orange;
+    display: flex;
+    justify-items: center;
+    width: 100%;
+}	
+
+:host ::ng-deep .p-carousel .p-carousel-item {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+:host ::ng-deep .p-carousel .p-carousel-next {
+    background-color: #0070cc;
+    right: 1px;
+    margin-right: 70px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+:host ::ng-deep .p-carousel {
+    border: 1px solid pink;
+    z-index: 0;
+}
+
+
+:host ::ng-deep .p-carousel .p-carousel-next:hover,
+:host ::ng-deep .p-carousel .p-carousel-prev:hover {
+  background-color: #005499;
+}
+
+
+.carousel__image {
+    max-width: 270px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.carousel-item, .carousel-item > p {
+    text-decoration: none;
+    text-align: left;
+}
+
+.carousel-image {
+    max-width: 270px;
+    width: 100%;
+    border-radius: 5%;
+}
+
+:host ::ng-deep .p-carousel {
+    width: 100%;
+}
+
+:host ::ng-deep .p-carousel-content {
+    width: 100%;
+}
+
+:host ::ng-deep .p-carousel .carousel__image {
+    position: relative;
+    max-width: 270px;
+    width: 100%;
+    border-radius: 5%;
+}
+
+:host ::ng-deep .p-carousel .carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    transition: filter 0.3s ease;
+}
+
+:host ::ng-deep .p-carousel .carousel-image:hover {
+    filter: brightness(0.8);
+}
+
+:host ::ng-deep .p-carousel .game-name {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
