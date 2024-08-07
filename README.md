@@ -1,27 +1,65 @@
-# AngularPsnStore
+# Playstation Store Clone 🎮
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
+Este projeto é um clone da PlayStation Store desenvolvido com **Angular** e utilizando a biblioteca **PrimeNG**. O objetivo foi criar uma interface de usuário que replica a experiência da PlayStation Store, incluindo banners promocionais, carrosséis de jogos e grids de imagens.
 
-## Development server
+## Tecnologias Utilizadas 🚀
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Angular**: Framework para construção da aplicação web.
+- **PrimeNG**: Biblioteca de componentes UI para Angular, utilizada para criar carrosséis e botões.
+- **CSS**: Para estilização dos componentes e layout da página.
 
-## Code scaffolding
+## Funcionalidades ✨
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Banner de Promoção Principal**: Apresenta promoções e ofertas em destaque.
+- **Galeria de Imagens**: Exibe cards de jogos com links para as páginas de compra.
+- **Carrosséis de Jogos**: Mostra os melhores jogos e novos lançamentos em carrosséis deslizantes.
+- **Banner de Promoção Secundário**: Destaca promoções adicionais e benefícios.
+- **Cartões Grandes**: Exibe uma grade de cartões grandes para promoções e jogos recomendados.
+- **Rodapé**: Contém informações adicionais e links para redes sociais.
 
-## Build
+## Instalação 🛠️
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para rodar o projeto localmente, siga estas etapas:
 
-## Running unit tests
+1. **Clone o repositório:**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    ```bash
+    git clone https://github.com/CacoCem/angular-psn-store.git
+    cd angular-psn-store
+    ```
 
-## Running end-to-end tests
+2. **Instale as dependências:**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    Certifique-se de ter o Node.js instalado e, em seguida, execute:
 
-## Further help
+    ```bash
+    npm install
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+3. **Instale o PrimeNG e PrimeIcons:**
+
+    ```bash
+    npm install primeng primeicons
+    ```
+
+4. **Inicie o servidor de desenvolvimento:**
+
+    ```bash
+    ng serve
+    ```
+
+    Acesse a aplicação no navegador através de `http://localhost:4200`.
+
+## Configuração do PrimeNG 🎨
+
+PrimeNG é utilizado para criar interfaces ricas e interativas. Os componentes PrimeNG configurados incluem:
+
+- **p-button**: Botões estilizados com o PrimeNG.
+- **p-carousel**: Componente de carrossel para exibir imagens e jogos.
+
+## Contato 📬
+
+Para mais informações ou dúvidas, entre em contato:
+
+- **Autor**: Cauan Cem Brito Soares
+- **Email**: cacocembritosoares@gmail.com
