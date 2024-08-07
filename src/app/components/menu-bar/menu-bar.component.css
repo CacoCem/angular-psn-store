@@ -1,4 +1,11 @@
-.sony__bar {
+/* Container para a Menubar */
+.menubar__container {
+    box-shadow: 0 16px 32px rgba(0,0,0,.12);
+    position: relative;
+  }
+  
+  /* Barra superior com o logo da Sony */
+  .sony__bar {
     text-align: right;
     background-color: black;
     height: 36px;
@@ -6,124 +13,147 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-
-.sony__logo {
+  }
+  
+  /* Logo da Sony */
+  .sony__logo {
     margin: 0 8px;
     background-image: url("https://store.playstation.com/static/lib/shared-nav/3.1.8/assets/fonts/sony_logo.svg");
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.header__menu-bar {
+  }
+  
+  /* Menu Header */
+  .header__menu-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #ffffff;
     justify-content: space-between;
+    transition: top 0.3s;
     width: 100%;
-    z-index: 9999;
-}
-
-.nav_container {
+    top: 0;
+    z-index: 2;
+  }
+  
+  /* Contêiner da terceira section */
+  .section__tertiary-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    transition: position 0.3s, top 0.3s;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 16px 32px rgba(0,0,0,.12);
+  }
+  
+  /* Classe para fixar o container no topo da tela */
+  .section__tertiary-container.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  
+  /* Contêiner de navegação */
+  .nav_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     width: 100%;
-}
-
-.nav__section {
+  }
+  
+  /* Seção de navegação */
+  .nav__section {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.items__menu-bar {
+  }
+  
+  /* Itens do menu */
+  .items__menu-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-:host ::ng-deep .p-menubar .p-menuitem-link {
+  }
+  
+  /* Estilos para o menu PrimeNG */
+  :host ::ng-deep .p-menubar .p-menuitem-link {
     background-color: white;
     padding: 0.6rem 1.5rem;
     font-size: 14px;
     display: flex;
     align-items: center;
-}
-
-:host ::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem {
+  }
+  
+  :host ::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem {
     display: flex;
     align-items: center;
     font-weight: bold;
     font-size: 11px;
-}
-
-:host ::ng-deep .p-button .p-button-label {
+  }
+  
+  /* Estilos para os botões */
+  :host ::ng-deep .p-button .p-button-label {
     padding: 0.4rem;
     font-size: 17px;
-}
-
-.buttons__container {
+  }
+  
+  /* Contêiner dos botões */
+  .buttons__container {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-}
-
-:host ::ng-deep .p-input-icon {
+  }
+  
+  /* Estilos para o campo de pesquisa */
+  :host ::ng-deep .p-input-icon {
     font-size: 1rem;
     line-height: 0;
-}
-
-:host ::ng-deep input[pInputText] {
+  }
+  
+  :host ::ng-deep input[pInputText] {
     border: 1px solid silver;
     width: 10rem;
     font-size: 1rem;
     padding: 0.5rem;
-}
-
- .section__tertiary-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-    position: relative;
-    box-shadow: 0 16px 32px 0 rgba(0,0,0,.12);
-}
-
-.tertiary-logo-container {
+  }
+  
+  /* Contêiner da logo da seção terciária */
+  .tertiary-logo-container {
     margin: 0 16px;
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.topics-container {
+  }
+  
+  /* Contêiner dos tópicos */
+  .topics-container {
     display: flex;
     justify-content: center;
     flex: 1;
     gap: 5px;
-}
-
-:host ::ng-deep .topic-button .p-button {
+  }
+  
+  /* Estilos para os botões dos tópicos */
+  :host ::ng-deep .topic-button .p-button {
     padding: 2px 20px;
     background-color: transparent;
     color: black;
-}
-
-
-:host ::ng-deep .topic-button.is-active {
+  }
+  
+  :host ::ng-deep .topic-button.is-active {
     background-color: #ebeef0;
     border-radius: 20px;
-
-}
-
-:host ::ng-deep .topic-button:hover {
+  }
+  
+  :host ::ng-deep .topic-button:hover {
     background-color: #ced5da;
     border-radius: 20px;
-}
+  }
