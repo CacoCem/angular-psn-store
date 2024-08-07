@@ -9,9 +9,10 @@ import { ButtonModule } from 'primeng/button';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { InputTextModule } from 'primeng/inputtext';
-import { GridCardComponent } from './compontents/grid-card/grid-card.component';
-import { CarouselCardComponent } from './components/carousel-card/carousel-card.component';
+import { GridCardComponent } from './components/grid-card/grid-card.component';
 import { CarouselModule } from 'primeng/carousel';
+import { FooterComponent } from './components/footer/footer.component';
+import { BigCardGridComponent } from './components/big-card-grid/big-card-grid.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CarouselModule } from 'primeng/carousel';
     HomeComponent,
     MenuBarComponent,
     GridCardComponent,
-    CarouselCardComponent,
+    FooterComponent,
+    BigCardGridComponent,
   ],
   imports: [
     BrowserModule,
