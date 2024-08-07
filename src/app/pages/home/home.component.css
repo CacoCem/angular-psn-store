@@ -2,6 +2,7 @@
     margin-top: 80px;
     margin-bottom: 80px;
 }
+
 .grid_images {
     display: flex;
     flex-direction: row;
@@ -18,8 +19,6 @@
     justify-content: space-between;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     padding: 40px 90px;
-
-
 }
 
 .promotion__info > h1 {
@@ -32,31 +31,40 @@
 }
 
 :host ::ng-deep .promotion_b .p-button {
-    /* Estilos para o botão, utilizando alta especificidade */
-    background-color: #007bff; /* Azul para o fundo */
-    color: white; /* Cor do texto */
-    padding: 1rem 1rem; /* Espaçamento interno */
-    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 1rem;
+    font-size: 1rem;
 }
 
 :host ::ng-deep .promotion_b .p-button:hover {
-    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
-    border-color: #0056b3; /* Cor da borda ao passar o mouse */
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
 
-.pai {
+.offers__container {
     margin-left: 91px;
     margin-right: 91px;
 }
 
+.banner__page {
+    margin-bottom: 80px;
+}
 
+.offer_content {
+    margin-bottom: 80px;
+}
 
+.offer_title, .offer_title > h2 {
+    font-weight: 400;
+    margin-bottom: 16px;
+    font-size: 28px;
+}
 
-.filho_carosel {
+.offer_carosel {
     display: block;
     justify-items: center;
     align-items: center;
-
 }
 
 :host ::ng-deep .p-carousel .p-carousel-next,
@@ -71,7 +79,6 @@
   transition: opacity 0.3s ease;
 }
 
-
 :host ::ng-deep .p-carousel .p-carousel-prev {
     background-color: #0070cc;
     left: 1px;
@@ -81,17 +88,15 @@
 }
 
 :host ::ng-deep .p-carousel .p-carousel-items-content {
-    border: 1px solid orange;
     display: flex;
     justify-items: center;
     width: 100%;
-}	
+}
 
 :host ::ng-deep .p-carousel .p-carousel-item {
     width: fit-content;
     display: flex;
     justify-content: space-between;
-    
 }
 
 :host ::ng-deep .p-carousel .p-carousel-next {
@@ -102,19 +107,14 @@
     z-index: 1;
 }
 
-
-
 :host ::ng-deep .p-carousel {
-    border: 1px solid pink;
     z-index: 0;
 }
-
 
 :host ::ng-deep .p-carousel .p-carousel-next:hover,
 :host ::ng-deep .p-carousel .p-carousel-prev:hover {
   background-color: #005499;
 }
-
 
 .carousel__image {
     max-width: 270px;
@@ -165,4 +165,27 @@
     font-size: 1rem;
     color: #333;
     font-weight: bold;
+}
+
+.title__big-card > h1 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.title__big-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.big-card__grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
 }

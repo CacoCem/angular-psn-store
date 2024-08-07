@@ -11,7 +11,6 @@
     </div>
 </div>
 
-
 <div class="grid_images">
     <app-grid-card gameLink="https://store.playstation.com/pt-br/concept/10002684"  bigcardcover="../../../assets/1astrobot.jpg"></app-grid-card>
     <app-grid-card gameLink="https://store.playstation.com/pt-br/concept/10002456"  bigcardcover="../../../assets/2spiderman.jpg"></app-grid-card>
@@ -21,21 +20,12 @@
     <app-grid-card gameLink="https://store.playstation.com/pt-br/concept/10003386"  bigcardcover="../../../assets/6riseofronin.jpg"></app-grid-card>
 </div>
 
-
-
-
-
-<div class="pai">
-    <div class="filho_container">
-        <div class="filho_title">
+<div class="offers__container">
+    <div class="offer_content">
+        <div class="offer_title">
             <h2>10 melhores jogos no seu país</h2>
         </div>
-    </div>
-    <div class="filho_container">
-        <div class="filho_title">
-            <h2>Novos jogos</h2>
-        </div>
-        <div class="filho_carosel">
+        <div class="offer_carosel">
             <p-carousel [value]="imagesCarousel1" [numVisible]="6" [numScroll]="6" [circular]="false">
                 <ng-template pTemplate="item" let-image>
                     <div class="carousel__image">
@@ -48,4 +38,54 @@
             </p-carousel>
         </div>
     </div>
+    <div class="offer_content">
+        <div class="offer_title">
+            <h2>Novos jogos</h2>
+        </div>
+        <div class="offer_carosel">
+            <p-carousel [value]="imagesCarousel2" [numVisible]="6" [numScroll]="6" [circular]="false">
+                <ng-template pTemplate="item" let-image>
+                    <div class="carousel__image">
+                        <a href="#" class="carousel-item">
+                            <img [src]="image.src" alt="{{image.alt}}" class="carousel-image" />
+                            <p class="game-name">{{ image.nameGame }}</p>
+                        </a>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+    </div>
+</div>
+
+<div class="banner__page">
+    <img src="../../../assets/banner_page2.png" alt="">
+    <div class="promotion__card">
+        <div class="promotion__info">
+            <h1>Descobre o PlayStation Plus</h1>
+            <p>Aproveite centenas de jogos de PS5, PS4 e clássicos, modo multijogador online e mais benefícios imperdíveis.</p>
+        </div>
+        <div class="promotion__button">
+            <p-button class="promotion_b" label="Saiba Mais" [rounded]="true"></p-button>
+        </div>
+    </div>
+</div>
+
+<div class="big-card__container">
+    <div class="title__big-card">
+        <h1>Veja Mais</h1>
+    </div>
+    <div class="big-card__grid">
+        <app-big-card-grid [imgSrc]="'/assets/1big-card.avif'"></app-big-card-grid>
+        <app-big-card-grid [imgSrc]="'/assets/2big-card.avif'"></app-big-card-grid>
+        <app-big-card-grid [imgSrc]="'/assets/3big-card.avif'"></app-big-card-grid>
+        <app-big-card-grid [imgSrc]="'/assets/4big-card.avif'"></app-big-card-grid>
+        <app-big-card-grid [imgSrc]="'/assets/5big-card.avif'"></app-big-card-grid>
+        <app-big-card-grid [imgSrc]="'/assets/6big-card.avif'"></app-big-card-grid>
+        <app-big-card-grid [imgSrc]="'/assets/7big-card.avif'"></app-big-card-grid>
+        <app-big-card-grid [imgSrc]="'/assets/8big-card.avif'"></app-big-card-grid>
+    </div>
+</div>
+
+<div class="footer__container">
+    <app-footer></app-footer>
 </div>
