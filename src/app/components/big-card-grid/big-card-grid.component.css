@@ -1,0 +1,15 @@
+.image__grid {
+    width: fit-content;
+    border-radius: 0.6rem;
+    transition: filter 0.3s ease;
+}
+.image_see-more {
+    max-width: 415px;
+    width: 100%;
+    border-radius: 0.6rem;
+}
+
+.image__grid:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+}
