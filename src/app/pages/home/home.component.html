@@ -29,7 +29,7 @@
             <p-carousel [value]="imagesCarousel1" [numVisible]="6" [numScroll]="6" [circular]="false">
                 <ng-template pTemplate="item" let-image>
                     <div class="carousel__image">
-                        <a href="#" class="carousel-item">
+                        <a href="{{image.link}}" class="carousel-item">
                             <img [src]="image.src" alt="{{image.alt}}" class="carousel-image" />
                             <p class="game-name">{{ image.nameGame }}</p>
                         </a>
