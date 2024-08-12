@@ -1,5 +1,5 @@
 <div class="banner__home">
-    <img src="../../../assets/banner_home.png" alt="">
+    <img src="../../../assets/banner_home.png" alt="" class="img__banner">
     <div class="promotion__card">
         <div class="promotion__info">
             <h1>Promoção de Inverno</h1>
@@ -26,7 +26,7 @@
             <h2>10 melhores jogos no seu país</h2>
         </div>
         <div class="offer_carosel">
-            <p-carousel [value]="imagesCarousel1" [numVisible]="6" [numScroll]="6" [circular]="false">
+            <p-carousel [value]="imagesCarousel1" [numVisible]="numVisible" [numScroll]="numScroll" [circular]="false">
                 <ng-template pTemplate="item" let-image>
                     <div class="carousel__image">
                         <a href="{{image.link}}" class="carousel-item">
@@ -43,7 +43,7 @@
             <h2>Novos jogos</h2>
         </div>
         <div class="offer_carosel">
-            <p-carousel [value]="imagesCarousel2" [numVisible]="6" [numScroll]="6" [circular]="false">
+            <p-carousel [value]="imagesCarousel2" [numVisible]="numVisible" [numScroll]="numScroll" [circular]="false">
                 <ng-template pTemplate="item" let-image>
                     <div class="carousel__image">
                         <a href="#" class="carousel-item">
@@ -58,7 +58,7 @@
 </div>
 
 <div class="banner__page">
-    <img src="../../../assets/banner_page2.png" alt="">
+    <img src="../../../assets/banner_page2.png" alt="" class="img__banner">
     <div class="promotion__card">
         <div class="promotion__info">
             <h1>Descobre o PlayStation Plus</h1>

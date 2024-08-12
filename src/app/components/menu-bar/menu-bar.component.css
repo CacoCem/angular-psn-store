@@ -158,3 +158,40 @@
     background-color: #ced5da;
     border-radius: 20px;
   }
+
+
+  @media (max-width: 1162px) {
+  .section__tertiary-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tertiary-logo-container {
+    padding-top: 2rem;
+    position: relative;
+    order: -1; /* Coloca o logo acima dos tópicos */
+  }
+
+  .topics-container {
+    order: 1; /* Garante que os tópicos apareçam abaixo do logo */
+  }
+}
+
+
+/* Media query para telas menores ou iguais a 768px */
+@media (max-width: 768px) {
+  .section__tertiary-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tertiary-logo-container {
+    padding-top: 2rem;
+    position: relative;
+    order: -1; /* Coloca o logo acima dos tópicos */
+  }
+
+  .topics-container {
+    order: 1; /* Garante que os tópicos apareçam abaixo do logo */
+  }
+}

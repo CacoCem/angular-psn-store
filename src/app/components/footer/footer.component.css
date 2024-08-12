@@ -141,3 +141,18 @@
   .separator {
     margin: 0 0.5rem;
   }
+
+
+  @media (max-width: 768px) {
+    .container__home {
+      flex-direction: column;
+     }
+
+     .container__region {
+      gap: 1rem;
+      font-size: 14px;
+      margin-left: 0;
+  }
+    
+
+}

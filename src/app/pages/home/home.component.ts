@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +9,9 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   imagesCarousel1: { src: string, alt: string, nameGame: string, link: string }[];
   imagesCarousel2: { src: string, alt: string, nameGame: string, link: string }[];
+
+  numVisible: number = 6;
+  numScroll: number = 6;
 
   constructor() {
     this.imagesCarousel1 = [
@@ -79,5 +82,32 @@ export class HomeComponent {
         link: 'https://store.playstation.com/pt-br/concept/10004425'
       },
     ];
+  }
+
+  ngOnInit() {
+    this.updateCarouselSettings();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.updateCarouselSettings();
+  }
+
+  private updateCarouselSettings() {
+    const width = window.innerWidth;
+
+    if (width <= 768) {
+      this.numVisible = 2;
+      this.numScroll = 2;
+    } else if (width > 1023 && width <= 1365) {
+      this.numVisible = 4;
+      this.numScroll = 4;
+    } else if (width > 768 && width <= 1023) {
+      this.numVisible = 3;
+      this.numScroll = 3;
+    } else {
+      this.numVisible = 6;
+      this.numScroll = 6;
+    }
   }
 }

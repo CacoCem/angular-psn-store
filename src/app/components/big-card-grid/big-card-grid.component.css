@@ -13,3 +13,12 @@
     cursor: pointer;
     filter: brightness(0.9);
 }
+
+
+@media (max-width: 768px) {
+    .image_see-more {
+        max-width: 345px;
+        width: 100%;
+        border-radius: 0.6rem;
+    }
+}
